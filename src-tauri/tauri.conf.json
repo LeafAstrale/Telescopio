@@ -12,6 +12,7 @@
   "app": {
     "windows": [
       {
+        "label": "main",
         "title": "telescopio",
         "width": 800,
         "height": 600
@@ -19,7 +20,8 @@
     ],
     "security": {
       "csp": null,
-      "freezePrototype": false
+      "freezePrototype": false,
+      "capabilities": ["fs","path", "telescopiodata"]
     }
   },
   "bundle": {

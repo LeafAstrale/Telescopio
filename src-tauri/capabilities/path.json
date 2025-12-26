@@ -1,0 +1,6 @@
+{
+  "identifier": "path",
+  "permissions": [
+    "core:path:allow-resolve-directory"
+  ]
+}
