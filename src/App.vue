@@ -1,24 +1,22 @@
 <script setup lang="ts">
 
 //import { ref } from 'vue';
-import { crearArchivo } from './Functions/Filehandler';
-import { Existe } from './Functions/existe';
-
-const a = "sexito";
-const b = "sexote";
-
-async function CarpetayArchivo(Nombre:string) {
- await Existe(Nombre);
- await crearArchivo (a, b);
-}
+import { crearRuta } from './Functions/CrearRuta';
+import { ReadFiles } from './Functions/ReadFiles';
 
 </script>
 
 <template>
   <main>
     <div>
-      <button v-on:click="CarpetayArchivo('Test1')"> Presioname</button>
+      <button v-on:click="crearRuta()"> Presioname</button>
     </div>
+    <div>
+      <button v-on:click="ReadFiles">
+        Selecciona imagenes a Plasmar: 
+      </button>
+    </div>
+    <p>Webo</p>
   </main>
 </template>
 
